@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-<title>Culonas Cup🏆</title>
+<title>Culonas Cup 🍑</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
@@ -11,14 +11,14 @@
 <style>
 /* ─── TOKENS ─────────────────────────────────────────── */
 :root {
-  --ground:    #0D1B2A;
-  --surface:   #132236;
-  --surface2:  #1A2E45;
-  --dim:       #243D57;
-  --text:      #E8F0FE;
-  --text-muted:#7A9BBF;
-  --accent:    #38BDF8;
-  --accent2:   #0EA5E9;
+  --ground:    #120D1E;
+  --surface:   #1C1530;
+  --surface2:  #261D42;
+  --dim:       #3A2D5E;
+  --text:      #F0EAFF;
+  --text-muted:#9B82C8;
+  --accent:    #C084FC;
+  --accent2:   #A855F7;
   --gold:      #F59E0B;
   --silver:    #94A3B8;
   --bronze:    #B45309;
@@ -55,7 +55,7 @@ img { max-width: 100%; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(13, 27, 42, 0.97);
+  background: rgba(18, 13, 30, 0.97);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--dim);
@@ -95,7 +95,7 @@ img { max-width: 100%; }
   transition: color 0.15s, background 0.15s;
 }
 .nav-link:hover  { color: var(--text); background: var(--dim); }
-.nav-link.active { color: var(--accent); background: rgba(56,189,248,0.1); }
+.nav-link.active { color: var(--accent); background: rgba(192,132,252,0.1); }
 
 /* Hamburger button — visible solo en móvil */
 .nav-hamburger {
@@ -128,7 +128,7 @@ img { max-width: 100%; }
   position: fixed;
   top: 52px; left: 0; right: 0;
   z-index: 99;
-  background: rgba(13, 27, 42, 0.98);
+  background: rgba(18, 13, 30, 0.98);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--dim);
@@ -151,7 +151,7 @@ img { max-width: 100%; }
 }
 .nav-drawer .nav-link.active {
   border-left-color: var(--accent);
-  background: rgba(56,189,248,0.07);
+  background: rgba(192,132,252,0.07);
   color: var(--accent);
 }
 .nav-drawer .nav-link .nav-icon { font-size: 18px; width: 24px; text-align: center; flex-shrink: 0; }
@@ -185,7 +185,7 @@ img { max-width: 100%; }
 
 /* ─── MONTH BAR (bajo el nav) ────────────────────────── */
 .month-bar {
-  background: rgba(13,27,42,0.97);
+  background: rgba(18,13,30,0.97);
   border-bottom: 1px solid var(--dim);
   padding: 0 16px;
   height: 36px;
@@ -277,7 +277,7 @@ img { max-width: 100%; }
 .player-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
-  background: rgba(56,189,248,0.08);
+  background: rgba(192,132,252,0.08);
 }
 .player-skip {
   font-size: 12px;
@@ -453,8 +453,8 @@ img { max-width: 100%; }
   background: var(--accent);
   transition: width 0.6s var(--ease-out);
 }
-.leader-row td { background: rgba(56,189,248,0.04) !important; }
-.leader-row:hover td { background: rgba(56,189,248,0.09) !important; }
+.leader-row td { background: rgba(192,132,252,0.04) !important; }
+.leader-row:hover td { background: rgba(192,132,252,0.09) !important; }
 
 /* ─── RANKING CARDS (móvil) ──────────────────────────── */
 .rank-cards { display: none; flex-direction: column; gap: 8px; }
@@ -467,7 +467,7 @@ img { max-width: 100%; }
   align-items: center;
   gap: 12px;
 }
-.rank-card.leader { border-color: rgba(56,189,248,0.35); background: rgba(56,189,248,0.04); }
+.rank-card.leader { border-color: rgba(192,132,252,0.35); background: rgba(192,132,252,0.04); }
 .rank-card-pos {
   font-family: var(--ff-display);
   font-weight: 800;
@@ -573,7 +573,7 @@ img { max-width: 100%; }
 }
 .sport-cal-cell.today {
   border-color: var(--accent);
-  box-shadow: 0 0 0 1px rgba(56,189,248,0.3);
+  box-shadow: 0 0 0 1px rgba(192,132,252,0.3);
 }
 .sport-cal-cell.has-activity {
   background: var(--surface);
@@ -950,9 +950,9 @@ canvas { display: block; width: 100% !important; }
   flex-shrink: 0;
 }
 .heatmap-cell:hover { transform: scale(1.4); z-index: 1; position: relative; }
-.heatmap-cell[data-level="1"] { background: rgba(56,189,248,0.2); }
-.heatmap-cell[data-level="2"] { background: rgba(56,189,248,0.45); }
-.heatmap-cell[data-level="3"] { background: rgba(56,189,248,0.7); }
+.heatmap-cell[data-level="1"] { background: rgba(192,132,252,0.2); }
+.heatmap-cell[data-level="2"] { background: rgba(192,132,252,0.45); }
+.heatmap-cell[data-level="3"] { background: rgba(192,132,252,0.7); }
 .heatmap-cell[data-level="4"] { background: var(--accent); }
 
 /* ─── BAR RACE ───────────────────────────────────────── */
@@ -970,8 +970,8 @@ canvas { display: block; width: 100% !important; }
   padding: 0;
 }
 .btn-race:first-child {
-  background: rgba(56,189,248,0.12);
-  border-color: rgba(56,189,248,0.35);
+  background: rgba(192,132,252,0.12);
+  border-color: rgba(192,132,252,0.35);
   color: var(--accent);
 }
 .btn-race:hover { border-color: var(--accent); color: var(--accent); }
@@ -1170,7 +1170,7 @@ canvas { display: block; width: 100% !important; }
 
 <!-- NAV -->
 <nav class="nav">
-  <span class="nav-brand">Nanão Cup 🏆®</span>
+  <span class="nav-brand">Culonas Cup 🍑®</span>
   <!-- Desktop links -->
   <div class="nav-links">
     <button class="nav-link active" onclick="scrollToSection('podium')">Podio</button>
@@ -1467,7 +1467,7 @@ let currentPlayer = null; // jugador elegido en el popup (solo afecta el calenda
 const SHEETS_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQFly9PXaDl6bCiXx1A16v8-cKr6_KOmXDVqEclyGjDjBAB9JgMuimoi_lImLqDqrEPoG8XbZxkuAta/pub?gid=2095058494&single=true&output=csv';
 
 const PERSON_COLORS = [
-  '#38BDF8','#34D399','#F59E0B','#F87171','#A78BFA',
+  '#C084FC','#E879F9','#F0ABFC','#A855F7','#818CF8',
   '#FB923C','#2DD4BF','#E879F9','#86EFAC','#FDE68A',
   '#67E8F9','#FCA5A5'
 ];
