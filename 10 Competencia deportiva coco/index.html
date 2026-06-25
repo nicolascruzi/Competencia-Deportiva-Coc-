@@ -1783,8 +1783,7 @@ function renderEvolution() {
     return allDates.map(d => { if (series[p][d] !== undefined) last = series[p][d]; return last; });
   });
 
-  // Canvas sizing — use offsetWidth if available, fallback to 300
-  const W = canvas.parentElement.offsetWidth - 32 || 300;
+  const W = Math.max(canvas.parentElement.offsetWidth - 32, 280);
   const H = 280;
   canvas.width  = W * devicePixelRatio;
   canvas.height = H * devicePixelRatio;
@@ -1880,6 +1879,9 @@ function showSection(id) {
     document.querySelectorAll('.nav-drawer .nav-link')[idx]?.classList.add('active');
   }
   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Re-render canvas-based charts after section is visible so offsetWidth is correct
+  if (id === 'evolution' && filteredData.length) requestAnimationFrame(renderEvolution);
+  if (id === 'comparator' && filteredData.length) requestAnimationFrame(renderComparator);
 }
 
 // ─── DRAWER ──────────────────────────────────────────────
@@ -2279,7 +2281,7 @@ function drawCmpChart(nA, nB, dA, dB, cA, cB) {
   const canvas = document.getElementById('cmpChart');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
-  const W   = canvas.parentElement.offsetWidth - 32 || 280;
+  const W   = Math.max(canvas.parentElement.offsetWidth - 32, 240);
   const H   = 180;
   canvas.width=W*devicePixelRatio; canvas.height=H*devicePixelRatio;
   canvas.style.width=W+'px'; canvas.style.height=H+'px';
